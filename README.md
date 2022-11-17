@@ -109,4 +109,4 @@ docker cp gemm_config.in ${SERVER_CONTAINER_NAME}:/workspace/
 docker commit ${SERVER_CONTAINER_NAME} ${SERVER_DOCKER_IMAGE}
 docker rm ${SERVER_CONTAINER_NAME}
 ```
-Now you have a new custom server image containing Triton Inference Server, FasterTransformer backend, and KoGPT model weights. You can upload it to hub and run without additional files.
+Now you have a new custom server image containing Triton Inference Server, FasterTransformer backend, and KoGPT model weights. You can upload it to hub and run without additional files anytime.
