@@ -1,7 +1,7 @@
 # Deploy KoGPT with Triton Server
 
 ## Introduction
-This repository is a template of NVIDIA Triton Inference Server. There are some requirements for deploying KoGPT with triton server and all pipelines are written in [build.sh](./build.sh) script. Follow the below sections and deploy a large language model successfully.
+This repository is a template of NVIDIA Triton Inference Server. There are some requirements for deploying KoGPT with triton server and all pipelines are written in [build.sh](./build.sh) script. Follow the below sections and deploy a large language model.
 
 ## Getting started
 
