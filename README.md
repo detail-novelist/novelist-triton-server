@@ -79,6 +79,7 @@ $ git clone -b KoGPT6B-ryan1.5b-float16 --single-branch https://huggingface.co/k
 ### Convert the weights and auto-tune kernels
 To use the model through FasterTransformer, the model should be converted to the corresponding format. In addition, to gain some performance enhancement, it is recommended to auto-tune some kernels to find the best algorithms. With using the docker image which we build in the above section, you can simply do by:
 ```bash
+$ export NUM_INFERENCE_GPUS=1
 $ docker run --rm --gpus=all -e NUM_INFERENCE_GPUS=${NUM_INFERENCE_GPUS} -v .:/ft_workspace ${FT_DOCKER_IMAGE} \
     /bin/bash -c \
         'python ./examples/pytorch/gptj/utils/huggingface_gptj_ckpt_convert.py \
