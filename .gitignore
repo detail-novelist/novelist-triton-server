@@ -37,3 +37,4 @@
 triton-model-store/*/fastertransformer/1/*/*
 gemm_config.in
 test.py
+setup.cfg
